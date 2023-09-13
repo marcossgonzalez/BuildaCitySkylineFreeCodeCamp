@@ -6,7 +6,7 @@
     --window-color1: black;
     --window-color2: #8cd9b3;
     --window-color3: #d98cb3;
-    --window-color4: 
+    --window-color4: #8cb3d9;
 
 }
 *{
@@ -24,6 +24,11 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.window-wrap{
+align-items: center;
+justify-content: space-evenly;
+display: flex;
 }
 .background-buildings, .foreground-buildings{
     width: 100%;
@@ -108,7 +113,6 @@ border-right: 5vw solid transparent;
 .fb1{
     width: 10%;
     height: 60%;
-    background-color: var(--building-color4);
 }
 .fb2{
     width: 10%;
@@ -163,4 +167,36 @@ border-right: 5vw solid transparent;
     width: 100%;
     height: 85%;
     background-color: var(--building-color4);
+}
+.bb4-window{
+    width: 18%;
+    height: 90%;
+    background-color: var(--window-color4);
+}
+.fb1b{
+    width: 60%;
+    height: 10%;
+    background-color: var(--building-color4);
+}
+.fb1c {
+    width: 100%;
+    height: 80%;
+    background: repeating-linear-gradient(
+        90deg,
+        var(--building-color4),
+        var(--building-color4) 10%,
+        transparent 10%,
+        transparent 15%
+      ),
+      repeating-linear-gradient(
+        var(--building-color4),
+        var(--building-color4) 10%,
+        var(--window-color4) 10%,
+        var(--window-color4) 90%
+      );
+  }
+.fb1a{
+    border-bottom: 7vh solid var(--building-color4);
+    border-left: 2vw solid transparent;
+    border-right: 2vw solid transparent;
 }
